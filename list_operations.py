@@ -129,7 +129,7 @@ def replace_head(input_list):
 
     """
 
-    pass
+    input_list[0] = 42
 
 
 def replace_third_and_last(input_list):
@@ -144,7 +144,8 @@ def replace_third_and_last(input_list):
 
     """
 
-    pass
+    input_list[2] = 37
+    input_list[-1] = 37
 
 
 def replace_middle(input_list):
@@ -163,7 +164,7 @@ def replace_middle(input_list):
 
     """
 
-    pass
+    input_list[2:8] = [42, 37]
 
 
 def delete_third_and_seventh(input_list):
@@ -178,8 +179,9 @@ def delete_third_and_seventh(input_list):
 
     """
 
-    pass
-
+    input_list[2:3] = []
+    input_list[5:6] = []
+    
 
 def delete_middle(input_list):
     """Remove all elements from input_list except the first two and last two.
@@ -195,7 +197,7 @@ def delete_middle(input_list):
 
     """
 
-    pass
+    input_list[2:-2] = []
 
 
 # This is the part were we actually run the doctests.
