@@ -35,7 +35,7 @@ def last(input_list):
 
     """
 
-    return input_list[2]
+    return input_list[len(input_list)-1]
 
 
 def top(input_list):
@@ -47,7 +47,7 @@ def top(input_list):
     ['Jan', 'Feb']
 
     """
-    return input_list[0:-1]
+    return input_list[:-1]
 
 
 def first_three(input_list):
@@ -143,9 +143,9 @@ def replace_third_and_last(input_list):
     True
 
     """
-
-    input_list[2] = 37
-    input_list[-1] = 37
+    input_list[2], input_list[-1] = [37, 37]
+    # input_list[2] = 37
+    # input_list[-1] = 37
 
 
 def replace_middle(input_list):
